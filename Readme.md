@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Василий Андрианов](https://up.htmlacademy.ru/htmlcss/18/user/364239).
-* Наставник: `Неизвестно`.
+* Наставник: [Максим Клевцов](https://htmlacademy.ru/profile/maxklevtsov).
 
 ---
 
