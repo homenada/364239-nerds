@@ -5,8 +5,110 @@
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
+<!--   <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p> -->  
+    <header class="main-header">
+	  <nav class="main-navigation">
+	    <a class="main-header-logo">
+	      <img src="img/index-logo.svg" width="100" height="50" alt="Логотип «Нёрдс»">
+	    </a>
+	    <ul class="site-navigation">
+		  <li><a href="info.html">Студия</a></li>
+		  <li><a href="client.html">Клиент</a></li>
+		  <li><a href="shop.html">Магазин</a></li>
+		  <li><a href="contacts.html">Контакты</a></li>
+		</ul>
+		<a class="basket" href="basket.html">Корзина</a>
+	  </nav>
+	  <div class="thesis">
+	    <p><b>Долго, дорого, скрупулезно</b></p>
+	    <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
+	    <a href="moreinfo-button">Узнать больше</a>
+	  </div>
+	</header>
+	
+	<main class="container">
+	  <h1 class="visible-hidden">Студия Нёрдс</h1>
+	  
+	  <section class="catalog">
+	    <h2 class="visible-hidden">Каталог товаров</h2>
+	    <ul class="catalog-list">
+		  <li class="catalog-item">
+		    <article class="web-sites">
+			  <h3>ВЕБ-САЙТЫ</h3>
+			  <p>Мир никогда не будет прежним после того как увидит ваш сайт</p>
+			  <a class="order-button">Заказать</a>
+	        </article>
+		  </li>
+		  <li class="catalog-item">
+	        <article class="apps">
+			  <h3>ПРИЛОЖЕНИЯ</h3>
+			  <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+			  <a class="order-button">Заказать</a>
+	        </article>
+		  </li>
+		  <li class="catalog-item">
+	        <article class="presentations">
+			  <h3>ПРЕЗЕНТАЦИИ</h3>
+			  <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+			  <a class="order-button">Заказать</a>
+	        </article>
+		  </li>
+		</ul>
+	  </section>
+	  
+	  <section class="features">
+	    <h2 class="visible-hidden">Наши особенности</h2>
+		<div>
+		  <p><b>Мы - маленькая, но гордая дизайн-студия из Краснодара</b></p>
+		  <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая, как роботы.</p>
+		  <h3>ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ:</h3>
+		  <ul class="order-list">
+		    <li class="order-item">Веб-сайтов любой сложности</li>
+		    <li class="order-item">Мобильных приложений для iOS и Android</li>
+		    <li class="order-item">Слайдшой и видео для корпоративных презентаций</li>
+		  </ul>
+		</div>
+		<div>
+		  <img src="img/index-logo-color.svg" width="100" height="50" alt="Цветной логотип «Нёрдс»"> 
+		  <h3>С 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЕМ:</h3>
+		  <ul class="features-list">
+		    <li class="features-item"><span>146%</span>Уровень самоотдачи</li>
+		    <li class="features-item"><span>100%</span>Соблюдение сроков</li>
+		    <li class="features-item"><span>50%</span>Минимальная предоплата</li>
+		  </ul>
+		</div>
+	  </section>
+	  
+	  <nav class="goods">
+	    <h2 class="visible-hidden">Товары</h2>
+	    <ul class="goods-list">
+		  <li class="goods-item"><a href="#">htmlacademy</a></li>
+		  <li class="goods-item"><a href="#">borodinsky</a></li>
+		  <li class="goods-item"><a href="#">pink</a></li>
+		  <li class="goods-item"><a href="#">mishka</a></li>
+		</ul>
+	  </nav>
+	</main>
+	
+	<footer class="main-footer">
+	  <div class="cart">
+	    <div class="our-contacts">
+		  <b>NЁRDS DESIGN STUDIO</b>
+		  <p>191186, Санкт-Петербург,<br>
+		    ул. Б. Конюшенная, д. 19/8</p>
+		  <p>тел. +7 (812) 275-75-75</p>
+		  <a class="feedback-button">НАПИШИТЕ НАМ</a>
+		</div>
+	  </div>
+      <div class="footer-social">
+        <ul>
+          <li><a class="social-button" href="#">Вконтакте</a></li>
+          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">Инстаграм</a></li>
+        </ul>
+		<b>Давайте дружить, это выгодно!</b>
+		<p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>	  
+	</footer>
   </body>
 </html>

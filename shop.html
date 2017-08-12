@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс - Магазин</title>
+  </head>
+  <body>
+    <header class="shop-header">
+	  <nav class="main-navigation">
+	    <a class="main-header-logo">
+	      <img src="img/index-logo.svg" width="100" height="50" alt="Логотип «Нёрдс»">
+	    </a>
+	    <ul class="site-navigation">
+		  <li><a href="info.html">Студия</a></li>
+		  <li><a href="client.html">Клиент</a></li>
+		  <li><a href="shop.html">Магазин</a></li>
+		  <li><a href="contacts.html">Контакты</a></li>
+		</ul>
+		<a class="basket" href="basket.html">Корзина</a>
+	  </nav>
+	  <h1>Магазин готовых шаблонов</h1>	
+	</header>
+	<main class="shop-content">
+	  <section class="shop-filter">
+	    <h2 class="visible-hidden">Фильтр</h2>
+		<form class="filter-form">
+		  <h3>СТОИМОСТЬ:</h3>
+		  <input type="range" min="1" max="10">
+		  <label>от</label>
+		  <input type="number" value="0">
+		  <label>до</label>
+		  <input type="number" value="15000">
+		  <h3>СЕТКА:</h3>
+		  <p><input type="radio" name="grid" value="adaptive"> Адаптивная<Br>
+		  <input type="radio" name="grid" value="fixed"> Фиксированная<Br>
+		  <input type="radio" name="grid" value="rubber"> Резиновая<Br></p>
+		  <h3>Особенности</h3>
+		  <p><input type="checkbox" id="slider"><label for="slider">Слайдер</label><Br>
+		  <input type="checkbox" id="advantage"><label for="advantage">Блок преимуществ</label><Br>
+		  <input type="checkbox" id="news"><label for="news">Новости</label><Br>
+		  <input type="checkbox" id="gallery"><label for="gallery">Галерея</label><Br>
+		  <input type="checkbox" id="basket"><label for="basket">Корзина</label><Br></p>
+		  <input type="submit" value="Показать">
+		</form>
+	  </section>
+	  <section class="shop-sorting">
+	    <h2 class="visible-hidden">Сортировка</h2>
+		<h3>Сортировать:</h3>
+		<p><input type="radio" name="sort-type" value="price">ПО ЦЕНЕ<Br>
+		  <input type="radio" name="sort-type" value="type">ПО ТИПУ<Br>
+		  <input type="radio" name="sort-type" value="name">ПО НАЗВАНИЮ<Br>
+		  <input type="radio" name="sort-direction" value="up">по возрастанию<Br>
+		  <input type="radio" name="sort-direction" value="low">по убыванию<Br></p>
+	  </section>
+	  <section class="goods">
+	    <h2 class="visible-hidden">Товары</h2>
+	    <ul class="goods-list">
+		  <li class="goods-item"><a  href="#"><img src="img/sedona.svg" width="50" height="150" alt="sedona"></a>
+		    <div class="price-active">
+			  <p><b>SEDONA</b></p>  
+			  <p>Информационный сайт для туристов</p>
+			  <a class="price-button">9900 РУБ.</a>
+			</div>
+		  </li>
+		  <li class="goods-item"><a href="#"><img src="img/pink.svg" width="50" height="150" alt="pink"></a>
+		  </li>
+		  <li class="goods-item"><a href="#"><img src="img/borodinski.svg" width="50" height="150" alt="borodinski"></a>
+		  </li>
+		  <li class="goods-item"><a href="#"><img src="img/mishka.svg" width="50" height="150" alt="mishka"></a>
+		  </li>
+		  <li class="goods-item"><a href="#"><img src="img/ua.svg" width="50" height="150" alt="ua"></a>
+		  </li>
+		  <li class="goods-item"><a href="#"><img src="img/kvast.svg" width="50" height="150" alt="kvast"></a>
+		  </li>
+		</ul>
+	  </section>
+	  <div class="pagger">
+	    <ul class="page-list">
+		  <li class="page-item"><a class="page-number-button">1</a></li>
+		  <li class="page-item"><a class="page-number-button">2</a></li>
+		  <li class="page-item"><a class="page-number-button">3</a></li>
+		  <li class="page-item"><a class="page-next-button">Следующая</a></li>
+		</ul>
+	  </div>
+	</main>
+	<footer class="shop-footer">
+	  <div class="cart">
+	    <div class="our-contacts">
+		  <b>NЁRDS DESIGN STUDIO</b>
+		  <p>191186, Санкт-Петербург,<br>
+		    ул. Б. Конюшенная, д. 19/8</p>
+		  <p>тел. +7 (812) 275-75-75</p>
+		  <a class="feedback-button">НАПИШИТЕ НАМ</a>
+		</div>
+	  </div>
+      <div class="footer-social">
+        <ul>
+          <li><a class="social-button" href="#">Вконтакте</a></li>
+          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">Инстаграм</a></li>
+        </ul>
+		<b>Давайте дружить, это выгодно!</b>
+		<p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>	
+	</footer>
+  </body>
+</html>
