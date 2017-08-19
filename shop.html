@@ -8,7 +8,7 @@
   <body>
     <header class="shop-header">
       <nav class="main-navigation">
-        <a class="main-header-logo">
+        <a class="main-header-logo" href="index.html">
           <img src="img/nerds-logo.svg" width="100" height="50" alt="Логотип «Нёрдс»">
         </a>
         <ul class="site-navigation">
@@ -27,38 +27,38 @@
         <form class="filter-form">
           <h3>СТОИМОСТЬ:</h3>        
           <input type="range" min="1" max="10">
-          <label>от</label>
-          <input type="number" value="0">
-          <label>до</label>
-          <input type="number" value="15000">
+          <label for="price-from">от</label>
+          <input type="number" value="0" id="price-from">
+          <label for="price-to">до</label>
+          <input type="number" value="15000" id="price-to">
           <h3>СЕТКА:</h3>
           <ul class="grid-filter">
-            <li class="grid-item"><input type="radio" name="grid" value="adaptive"> Адаптивная</li>
-            <li class="grid-item"><input type="radio" name="grid" value="fixed"> Фиксированная</li>
-            <li class="grid-item"><input type="radio" name="grid" value="rubber"> Резиновая</li>
+            <li class="grid-item"><input type="radio" name="grid" value="adaptive" id="grid-adaptive"><label for="grid-adaptive">Адаптивная</label></li>
+            <li class="grid-item"><input type="radio" name="grid" value="fixed" id="grid-fixed"><label for="grid-fixed">Фиксированная</label></li>
+            <li class="grid-item"><input type="radio" name="grid" value="rubber" id="grid-rubber"><label for="grid-rubber">Резиновая</label></li>
           </ul>
           <h3>Особенности</h3>
           <ul class="feature-filter">
-            <li class="feature-item"><input type="checkbox" id="slider"><label for="slider">Слайдер</label></li>
-            <li class="feature-item"><input type="checkbox" id="advantage"><label for="advantage">Блок преимуществ</label></li>
-            <li class="feature-item"><input type="checkbox" id="news"><label for="news">Новости</label></li>
-            <li class="feature-item"><input type="checkbox" id="gallery"><label for="gallery">Галерея</label></li>
-            <li class="feature-item"><input type="checkbox" id="basket"><label for="basket">Корзина</label></li>
+            <li class="feature-item"><input type="checkbox" id="feature-slider"><label for="feature-slider">Слайдер</label></li>
+            <li class="feature-item"><input type="checkbox" id="feature-advantage"><label for="feature-advantage">Блок преимуществ</label></li>
+            <li class="feature-item"><input type="checkbox" id="feature-news"><label for="feature-news">Новости</label></li>
+            <li class="feature-item"><input type="checkbox" id="feature-gallery"><label for="feature-gallery">Галерея</label></li>
+            <li class="feature-item"><input type="checkbox" id="feature-basket"><label for="feature-basket">Корзина</label></li>
           </ul>
-          <input type="submit" value="Показать">
+          <button value="apply-filter">Показать</button>
         </form>
       </section>
       <section class="shop-sorting">
         <h2 class="visible-hidden">Сортировка</h2>
         <h3>Сортировать:</h3>
         <ul class="sort-type-filter">
-          <li class="sort-type-item"><input type="radio" name="sort-type" value="price">ПО ЦЕНЕ</li>
-          <li class="sort-type-item"><input type="radio" name="sort-type" value="type">ПО ТИПУ</li>
-          <li class="sort-type-item"><input type="radio" name="sort-type" value="name">ПО НАЗВАНИЮ</li>
+          <li class="sort-type-item"><input type="radio" name="sort-type" value="price" id="sort-price"><label for="sort-price">ПО ЦЕНЕ</label></li>
+          <li class="sort-type-item"><input type="radio" name="sort-type" value="type" id="sort-type"><label for="sort-type">ПО ТИПУ</label></li>
+          <li class="sort-type-item"><input type="radio" name="sort-type" value="name" id="sort-name"><label for="sort-name">ПО НАЗВАНИЮ</label></li>
         </ul>
         <ul class="sort-direction-filter">
-          <li class="sort-direction-item"><input type="radio" name="sort-direction" value="up">по возрастанию</li>
-          <li class="sort-direction-item"><input type="radio" name="sort-direction" value="low">по убыванию</li>
+          <li class="sort-direction-item"><input type="radio" name="sort-direction" value="up" id="sort-up"><label for="sort-up">по возрастанию</label></li>
+          <li class="sort-direction-item"><input type="radio" name="sort-direction" value="low" id="sort-low"><label for="sort-low">по убыванию</label></li>
         </ul>
       </section>
       <section class="goods">
@@ -68,7 +68,7 @@
             <div class="price-active">
               <p><b>SEDONA</b></p>  
               <p>Информационный сайт для туристов</p>
-              <a class="price-button">9900 РУБ.</a>
+              <button class="price-button">9900 РУБ.</button>
             </div>
           </li>
           <li class="goods-item"><a href="#"><img src="img/img-pink.jpg" width="50" height="150" alt="pink"></a>
@@ -77,7 +77,7 @@
           </li>
           <li class="goods-item"><a href="#"><img src="img/img-mishka.jpg" width="50" height="150" alt="mishka"></a>
           </li>
-          <li class="goods-item"><a href="#"><img src="img/img-aplus.jpg" width="50" height="150" alt="ua"></a>
+          <li class="goods-item"><a href="#"><img src="img/img-aplus.jpg" width="50" height="150" alt="aplus"></a>
           </li>
           <li class="goods-item"><a href="#"><img src="img/img-kvast.jpg" width="50" height="150" alt="kvast"></a>
           </li>
@@ -85,10 +85,10 @@
       </section>
       <div class="pagger">
         <ul class="page-list">
-          <li class="page-item"><a class="page-number-button">1</a></li>
-          <li class="page-item"><a class="page-number-button">2</a></li>
-          <li class="page-item"><a class="page-number-button">3</a></li>
-          <li class="page-item"><a class="page-next-button">Следующая</a></li>
+          <li class="page-item"><a href=# class="page-number-button">1</a></li>
+          <li class="page-item"><a href=# class="page-number-button">2</a></li>
+          <li class="page-item"><a href=# class="page-number-button">3</a></li>
+          <li class="page-item"><a href=# class="page-next-button">Следующая</a></li>
         </ul>
       </div>
     </main>
@@ -99,7 +99,7 @@
           <p>191186, Санкт-Петербург,<br>
             ул. Б. Конюшенная, д. 19/8</p>
           <p>тел. +7 (812) 275-75-75</p>
-          <a class="feedback-button">НАПИШИТЕ НАМ</a>
+          <a class="feedback-button" href="feedback">НАПИШИТЕ НАМ</a>
         </div>
       </div>
       <div class="footer-social">
