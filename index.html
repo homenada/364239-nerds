@@ -3,13 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo">
-          <img src="img/nerds-logo.svg" width="100" height="50" alt="Логотип «Нёрдс»">
+          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип «Нёрдс»">
         </a>
         <ul class="site-navigation">
           <li><a href="info.html">Студия</a></li>
@@ -22,7 +24,7 @@
       <div class="thesis">
         <p><b>Долго, дорого, скрупулезно</b></p>
         <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-        <a href="moreinfo-button">Узнать больше</a>
+        <a class="btn btn-more-info" href="#moreinfo">Узнать больше</a>
       </div>
     </header>
     
@@ -36,21 +38,21 @@
             <article class="web-sites">
               <h3>ВЕБ-САЙТЫ</h3>
               <p>Мир никогда не будет прежним после того как увидит ваш сайт</p>
-              <a href=# class="order-button">Заказать</a>
+              <a href=# class="btn order-sites">Заказать</a>
             </article>
           </li>
           <li class="catalog-item">
             <article class="apps">
               <h3>ПРИЛОЖЕНИЯ</h3>
               <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-              <a href=# class="order-button">Заказать</a>
+              <a href=# class="btn order-apps">Заказать</a>
             </article>
           </li>
           <li class="catalog-item">
             <article class="presentations">
               <h3>ПРЕЗЕНТАЦИИ</h3>
               <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-              <a href=# class="order-button">Заказать</a>
+              <a href=# class="btn order-presentations">Заказать</a>
             </article>
           </li>
         </ul>
@@ -69,12 +71,12 @@
           </ul>
         </div>
         <div>
-          <img src="img/index-logo-color.png" width="100" height="50" alt="Цветной логотип «Нёрдс»"> 
+          <img src="img/index-logo-color.png" width="360" height="208" alt="Цветной логотип «Нёрдс»"> 
           <h3>С 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЕМ:</h3>
           <ul class="features-list">
-            <li class="features-item"><span>146%</span>Уровень самоотдачи</li>
-            <li class="features-item"><span>100%</span>Соблюдение сроков</li>
-            <li class="features-item"><span>50%</span>Минимальная предоплата</li>
+            <li class="features-item"><span>146<sup>%</sup></span>Уровень самоотдачи</li>
+            <li class="features-item"><span>100<sup>%</sup></span>Соблюдение сроков</li>
+            <li class="features-item"><span>50<sup>%</sup></span>Минимальная предоплата</li>
           </ul>
         </div>
       </section>
@@ -97,7 +99,7 @@
           <p>191186, Санкт-Петербург,<br>
             ул. Б. Конюшенная, д. 19/8</p>
           <p>тел. +7 (812) 275-75-75</p>
-          <a class="feedback-button" href="feedback">НАПИШИТЕ НАМ</a>
+          <a class="btn feedback-button" href="feedback">НАПИШИТЕ НАМ</a>
         </div>
       </div>
       <div class="footer-social">
@@ -113,20 +115,20 @@
     
     <form class="feedback-form" action="/keksby-mail" method="post">
       <h2>Напишите нам</h2>
-      <div class="feedback-form-group">
+      <div class="feedback-form-name">
         <label for="fullname">Ваше имя:</label>
         <input type="text" name="fullname" id="fullname" placeholder="Представьтесь, пожалуйста">
       </div>
-      <div class="feedback-form-group">
+      <div class="feedback-form-email">
         <label for="email">Ваш e-mail:</label>
         <input type="text" name="email" id="email" placeholder="Для отправки ответа">
       </div>
-      <div class="feedback-form-group">
+      <div class="feedback-form-message">
         <label for="message">Текст письма:</label>
         <textarea name="message" id="message" placeholder="В свободной форме"></textarea>
       </div>
-      <button name="send" value="send">ОТПРАВИТЬ</button>
-      <button name="close" value="close">Закрыть</button>
+      <button class="button" name="send" value="send">ОТПРАВИТЬ</button>
+      <button class="button" name="close" value="close">Закрыть</button>
     </form>
   </body>
 </html>

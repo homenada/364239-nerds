@@ -1,20 +1,273 @@
 body {
-	font-family: "Roboto";
-	font-size: 16px;
-	line-height: normal;
-	color: black;
-	font-weight: normal;
+  margin: 0;
+  padding:0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: black;
+  font-weight: normal;
 }
 
-h1 {
-	font-size: 36px;
+.visible-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
 }
 
-h2 {
-	font-size: 30px;
+a {
+  text-decoration: none;
+  text-transform: uppercase;  
 }
 
-h3 {
-	font-size: 24px;
-	font-weight: bold;
+.main-header,
+.shop-header {
+  background-color: #eeeeee;
+}
+
+.site-navigation,
+.catalog-list,
+.features-list,
+.goods-list,
+.footer-social ul,
+.grid-filter,
+.feature-filter,
+.sort-type-filter,
+.sort-direction-filter,
+.page-list {
+  list-style: none;
+}
+
+.main-navigation a {
+  color: #000000;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus {
+  color: #fb565a;
+}
+
+.main-navigation a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.thesis b,
+.shop-header h1 {
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.btn {
+  color: #ffffff;
+  line-height: 18px;
+  background-color: #fb565a;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #e74246;
+}
+
+.btn:active {
+  background-color: #d7373b;
+  color: rbga(255,255,255,0.3);
+}
+
+.order-apps {
+  background-color: #00ca74;
+}
+
+.order-apps:hover,
+.order-apps:focus {
+  background-color: #00bc6c;
+}
+
+.order-apps:active {
+  background-color: #00aa62;
+  color: rbga(255,255,255,0.3);
+}
+
+.order-presentations {
+  background-color: #efc84a;
+}
+
+.order-presentations:hover,
+.order-presentations:focus {
+  background-color: #eab534;
+}
+
+.order-presentations:active{
+  background-color: #e5a722;
+  color: rbga(255,255,255,0.3);
+}
+
+.catalog-item h3 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.features b {
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.features h3 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.features-item {
+  line-height: 18px;
+}
+
+.features-item span {
+  font-size: 45px;
+  line-height: 10px;
+  font-weight: bold;
+}
+
+.our-contacts,
+.price-active p {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.our-contacts b,
+.shop-filter h3,
+.price-active b {
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.footer-social b {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.footer-social p {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.feedback-form h2 {
+  font-size: 45px;
+  line-height: 45px;  
+}
+
+.feedback-form label {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 18px;  
+}
+
+.feedback-form input {
+  font: inherit;
+  background-color: transparent;
+  border: 2px solid #d7dcde;
+  color: rgba(68, 68, 68, 0.5);
+}
+
+.feedback-form input:hover {
+  border-color: #b4b9bb;
+}
+
+.feedback-form input:focus {
+  border-color: #000000;
+  color: #444444;
+}
+
+.feedback-form input:invalid {
+  border-color: #e74246;
+  color: #e74246;
+}
+
+.shop-filter label {
+  line-height: 22px;
+}
+
+.grid-filter label,
+.feature-filter label {
+  line-height: 20px;
+}
+
+.sort-type-filter label {
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(0,0,0,0.3);
+  text-transform: uppercase;
+}
+
+.sort-type-filter label:hover,
+.sort-type-filter label:focus {
+  color: rgba(0,0,0,0.6);
+}
+
+.sort-type-filter label:active {
+  color: rgba(0,0,0,1);
+}
+
+.price-active {
+  background-color: #eeeeee;
+}
+
+.page-item a {
+  line-height: 18px;
+  color: #000000;
+  background-color: #eeeeee;
+}
+
+.page-item a:hover,
+.page-item a:focus {
+  background-color: #dfdfdf;
+}
+
+.page-item a:active {
+  color: rgba(0,0,0,0.3);
+  background-color: #d5d5d5;
+}
+
+.button {
+  font: inherit;
+  font-size: 16px;
+  line-height: 18px;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #fb565a;
+  border: none;
+}
+
+.price-button:hover,
+.price-button:focus {
+  background-color: #e74246;
+}
+
+.price-button:active {
+  background-color: #d7373b;
+}
+
+.filter-form .button {
+  color: #000000;
+  background-color: #eeeeee;
+}
+
+.filter-form .button:hover,
+.filter-form .button:focus {
+  background-color: #dfdfdf;
+}
+
+.filter-form .button:active {
+  background-color: #d5d5d5;
+  color: rgba(0,0,0,0.3);
 }
