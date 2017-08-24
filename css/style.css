@@ -35,7 +35,7 @@ a {
 .goods-list,
 .footer-social ul,
 .grid-filter,
-.feature-filter,
+.characteristics-filter,
 .sort-type-filter,
 .sort-direction-filter,
 .page-list {
@@ -168,23 +168,31 @@ a {
   line-height: 18px;  
 }
 
-.feedback-form input {
+.feedback-form input,
+.feedback-form textarea,
+.filter-form .input-price {
   font: inherit;
   background-color: transparent;
   border: 2px solid #d7dcde;
   color: rgba(68, 68, 68, 0.5);
 }
 
-.feedback-form input:hover {
+.feedback-form input:hover,
+.feedback-form textarea:hover,
+.filter-form .input-price:hover {
   border-color: #b4b9bb;
 }
 
-.feedback-form input:focus {
+.feedback-form input:focus,
+.feedback-form textarea:focus,
+.filter-form .input-price:focus {
   border-color: #000000;
   color: #444444;
 }
 
-.feedback-form input:invalid {
+.feedback-form input:invalid,
+.feedback-form textarea:invalid,
+.filter-form .input-price:invalid {
   border-color: #e74246;
   color: #e74246;
 }
@@ -194,23 +202,32 @@ a {
 }
 
 .grid-filter label,
-.feature-filter label {
+.characteristics-filter label {
   line-height: 20px;
+  color: #283136;
 }
 
-.sort-type-filter label {
+.characteristics-item:disabled {
+  color: rbga(40,49,54,0.3);
+}
+
+.sort-type-item a,
+.sort-direction-item a{
   font-size: 14px;
   line-height: 18px;
   color: rgba(0,0,0,0.3);
   text-transform: uppercase;
 }
 
-.sort-type-filter label:hover,
-.sort-type-filter label:focus {
+.sort-type-item a:hover,
+.sort-type-item a:focus,
+.sort-direction-item a:hover,
+.sort-direction-item a:focus  {
   color: rgba(0,0,0,0.6);
 }
 
-.sort-type-filter label:active {
+.sort-type-item a:active,
+.sort-direction-item a:active {
   color: rgba(0,0,0,1);
 }
 

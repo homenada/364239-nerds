@@ -27,25 +27,25 @@
       <section class="shop-filter">
         <h2 class="visible-hidden">Фильтр</h2>
         <form class="filter-form">
-          <h3>СТОИМОСТЬ:</h3>        
+          <h3>стоимость:</h3>        
           <input type="range" min="1" max="10">
           <label for="price-from">от</label>
-          <input type="number" value="0" id="price-from">
+          <input class="input-price" type="number" value="0" id="price-from">
           <label for="price-to">до</label>
-          <input type="number" value="15000" id="price-to">
-          <h3>СЕТКА:</h3>
+          <input class="input-price" type="number" value="15000" id="price-to">
+          <h3>сетка:</h3>
           <ul class="grid-filter">
             <li class="grid-item"><input type="radio" name="grid" value="adaptive" id="grid-adaptive"><label for="grid-adaptive">Адаптивная</label></li>
             <li class="grid-item"><input type="radio" name="grid" value="fixed" id="grid-fixed"><label for="grid-fixed">Фиксированная</label></li>
             <li class="grid-item"><input type="radio" name="grid" value="rubber" id="grid-rubber"><label for="grid-rubber">Резиновая</label></li>
           </ul>
           <h3>Особенности</h3>
-          <ul class="feature-filter">
-            <li class="feature-item"><input type="checkbox" id="feature-slider"><label for="feature-slider">Слайдер</label></li>
-            <li class="feature-item"><input type="checkbox" id="feature-advantage"><label for="feature-advantage">Блок преимуществ</label></li>
-            <li class="feature-item"><input type="checkbox" id="feature-news"><label for="feature-news">Новости</label></li>
-            <li class="feature-item"><input type="checkbox" id="feature-gallery"><label for="feature-gallery">Галерея</label></li>
-            <li class="feature-item"><input type="checkbox" id="feature-basket"><label for="feature-basket">Корзина</label></li>
+          <ul class="characteristics-filter">
+            <li class="characteristics-item"><input type="checkbox" id="feature-slider"><label for="feature-slider">Слайдер</label></li>
+            <li class="characteristics-item"><input type="checkbox" id="feature-advantage"><label for="feature-advantage">Блок преимуществ</label></li>
+            <li class="characteristics-item"><input type="checkbox" id="feature-news"><label for="feature-news">Новости</label></li>
+            <li class="characteristics-item"><input type="checkbox" id="feature-gallery"><label for="feature-gallery">Галерея</label></li>
+            <li class="characteristics-item"><input type="checkbox" id="feature-basket"><label for="feature-basket">Корзина</label></li>
           </ul>
           <button value="apply-filter" class="button">Показать</button>
         </form>
@@ -54,13 +54,13 @@
         <h2 class="visible-hidden">Сортировка</h2>
         <h3>Сортировать:</h3>
         <ul class="sort-type-filter">
-          <li class="sort-type-item"><input type="radio" name="sort-type" value="price" id="sort-price"><label for="sort-price">ПО ЦЕНЕ</label></li>
-          <li class="sort-type-item"><input type="radio" name="sort-type" value="type" id="sort-type"><label for="sort-type">ПО ТИПУ</label></li>
-          <li class="sort-type-item"><input type="radio" name="sort-type" value="name" id="sort-name"><label for="sort-name">ПО НАЗВАНИЮ</label></li>
+          <li class="sort-type-item"><a href=#>по цене</a></li>
+          <li class="sort-type-item"><a href=#>по типу</a></li>
+          <li class="sort-type-item"><a href=#>по названию</a></li>
         </ul>
         <ul class="sort-direction-filter">
-          <li class="sort-direction-item"><input type="radio" name="sort-direction" value="up" id="sort-up"><label for="sort-up">по возрастанию</label></li>
-          <li class="sort-direction-item"><input type="radio" name="sort-direction" value="low" id="sort-low"><label for="sort-low">по убыванию</label></li>
+          <li class="sort-direction-item"><a href=#>по возрастанию</a></li>
+          <li class="sort-direction-item"><a href=#>по убыванию</a></li>
         </ul>
       </section>
       <section class="goods">
@@ -68,42 +68,42 @@
         <ul class="goods-list">
           <li class="goods-item"><a  href="#"><img src="img/img-sedona.jpg" width="359" height="615" alt="sedona"></a>
             <div class="price-active">
-              <p><b>SEDONA</b></p>  
+              <p><b>sedona</b></p>  
               <p>Информационный сайт для туристов</p>
               <button class="button price-button">9900 РУБ.</button>
             </div>
           </li>
           <li class="goods-item"><a href="#"><img src="img/img-pink.jpg" width="359" height="615" alt="pink"></a>
             <div class="price-active">
-              <p><b>PINK APP</b></p>  
+              <p><b>pink app</b></p>  
               <p>Продуктовый лендинг приложения для iOS и Android</p>
               <button class="button price-button">9900 РУБ.</button>
             </div>
           </li>
           <li class="goods-item"><a href="#"><img src="img/img-barbershop.jpg" width="359" height="615" alt="borodinski"></a>
             <div class="price-active">
-              <p><b>BARBERSHOP</b></p>  
+              <p><b>barbershop</b></p>  
               <p>Сайт салоны красоты. Для мужчин, да.</p>
               <button class="button price-button">9900 РУБ.</button>
             </div>
           </li>
           <li class="goods-item"><a href="#"><img src="img/img-mishka.jpg" width="359" height="615" alt="mishka"></a>
             <div class="price-active">
-              <p><b>MISHKA</b></p>  
+              <p><b>mishka</b></p>  
               <p>Интернет-магазин  вязаных игрушек</p>
               <button class="button price-button">9900 РУБ.</button>
             </div>
           </li>
           <li class="goods-item"><a href="#"><img src="img/img-aplus.jpg" width="359" height="615" alt="aplus"></a>
             <div class="price-active">
-              <p><b>A PLUS</b></p>  
+              <p><b>a plus</b></p>  
               <p>Лендинг курсов повышения квалификации</p>
               <button class="button price-button">9900 РУБ.</button>
             </div>
           </li>
           <li class="goods-item"><a href="#"><img src="img/img-kvast.jpg" width="359" height="615" alt="kvast"></a>
             <div class="price-active">
-              <p><b>КВАСТ</b></p>  
+              <p><b>кваст</b></p>  
               <p>Промо-сайт производителя крафтового кваса</p>
               <button class="button price-button">9900 РУБ.</button>
             </div>
@@ -126,7 +126,7 @@
           <p>191186, Санкт-Петербург,<br>
             ул. Б. Конюшенная, д. 19/8</p>
           <p>тел. +7 (812) 275-75-75</p>
-          <a class="btn feedback-button" href="feedback">НАПИШИТЕ НАМ</a>
+          <a class="btn feedback-button" href="feedback">напишите нам</a>
         </div>
       </div>
       <div class="footer-social">
