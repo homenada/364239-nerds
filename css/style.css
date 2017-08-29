@@ -5,10 +5,10 @@ body, html {
   font-size: 16px;
   line-height: 24px;
   color: black;
-  width: 1440px;
+  min-width: 1440px;
   font-weight: normal;
-/* для сетки*/	
-  background-image: url(nerds-index.jpg);
+/* для сетки  
+  background-image: url('nerds-catalog.jpg');
   background-repeat:  no-repeat;
   background-size: 1440px;
   background-color: transparent;
@@ -16,7 +16,8 @@ body, html {
 
 }
 
-.visible-hidden {
+.visible-hidden,
+.price-active {
   position: absolute;
   overflow: hidden;
   clip: rect(0 0 0 0);
@@ -36,7 +37,7 @@ a {
 .shop-header {
   margin: 0;
   padding: 0;
-//  background-color: #eeeeee;
+  background-color: #eeeeee;
 }
 
 .site-navigation,
@@ -156,6 +157,7 @@ a {
 
 .our-contacts b,
 .shop-filter h3,
+.shop-sorting h3,
 .price-active b {
   font-size: 18px;
   line-height: 30px;
@@ -306,15 +308,26 @@ a {
 }
 
 /* сетка */
-.main-header {
+.main-header,
+.shop-header {
   margin: 0;
   padding: 0;
   min-height: 545px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+ // justify-content: space-around;
   align-items: flex-start;
   padding: 0 140px;
+}
+
+.shop-header {
+  min-height: 305px;
+  margin-bottom: 33px;
+  padding-top: 50px;
+}
+
+.shop-header h1 {
+  align-self: center;
 }
 
 .main-navigation {
@@ -322,7 +335,6 @@ a {
   justify-content: space-between;
   min-height: 80px;
   align-self: stretch;  
-  outline: 1px solid green;  
 }
 
 .main-header-logo {
@@ -345,7 +357,7 @@ a {
 }
 
 .header-block {
-	display: flex;
+  display: flex;
 }
 
 .thesis {
@@ -444,4 +456,53 @@ a {
 
 .footer-container {
   margin-left: 140px;
+}
+
+.shop-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter-form {
+  width: 260px;
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+  width: 760px;
+}
+
+.goods-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.goods-item {
+  width: 360px;
+  height: 615px;
+  margin-bottom: 75px;
+}
+
+.shop-sorting {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sort-type-filter {
+  display: flex;
+}
+
+.sort-direction-filter {
+  display: flex;
+}
+
+.page-list {
+  display: flex;
+}
+
+.page-item {
+  margin-right: 10px;
 }
