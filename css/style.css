@@ -1,11 +1,19 @@
-body {
+body, html {
   margin: 0;
   padding:0;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: black;
+  width: 1440px;
   font-weight: normal;
+/* для сетки*/	
+  background-image: url(nerds-index.jpg);
+  background-repeat:  no-repeat;
+  background-size: 1440px;
+  background-color: transparent;
+/* для сетки */  
+
 }
 
 .visible-hidden {
@@ -26,7 +34,9 @@ a {
 
 .main-header,
 .shop-header {
-  background-color: #eeeeee;
+  margin: 0;
+  padding: 0;
+//  background-color: #eeeeee;
 }
 
 .site-navigation,
@@ -38,8 +48,11 @@ a {
 .characteristics-filter,
 .sort-type-filter,
 .sort-direction-filter,
-.page-list {
+.page-list,
+.slider {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .main-navigation a {
@@ -110,6 +123,8 @@ a {
 .catalog-item h3 {
   font-size: 24px;
   line-height: 30px;
+  text-transform: uppercase;
+  margin: 0;
 }
 
 .features b {
@@ -120,6 +135,7 @@ a {
 .features h3 {
   font-weight: bold;
   text-transform: uppercase;
+  font-size: 16px;
 }
 
 .features-item {
@@ -287,4 +303,145 @@ a {
 .filter-form .button:active {
   background-color: #d5d5d5;
   color: rgba(0,0,0,0.3);
+}
+
+/* сетка */
+.main-header {
+  margin: 0;
+  padding: 0;
+  min-height: 545px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 0 140px;
+}
+
+.main-navigation {
+  display: flex;
+  justify-content: space-between;
+  min-height: 80px;
+  align-self: stretch;  
+  outline: 1px solid green;  
+}
+
+.main-header-logo {
+  width: 160px;
+  height: 65px;
+}
+
+.site-navigation {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 760px;
+  justify-content: space-around;
+  min-height: 80px;
+}
+
+.basket {
+  width: 180px;
+  min-height: 80px;
+}
+
+.header-block {
+	display: flex;
+}
+
+.thesis {
+  min-height: 80px;
+  width: 380px;
+}
+
+.slider {
+  width: 780px;
+  height: 420px;
+}
+
+.container {
+  padding: 0 20px;
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.catalog-list {
+  display: flex;
+  justify-content: space-between;
+  min-height: 510px;
+}
+
+.catalog-item {
+  width: 360px;
+  padding-top: 260px;
+}
+
+.catalog-item p {
+  display: block;
+  width: 260px;
+}
+
+.features {
+  display: flex;
+  min-height: 530px;
+  justify-content: space-between;
+}
+
+.features-list {
+  display: flex;
+  width: 360px;
+  flex-wrap: wrap;
+
+}
+
+.features-item {
+  width: 120px;
+}
+
+.features-left {
+  margin-top: 57px;
+  display: flex;
+  flex-direction: column;
+  width: 660px;
+}
+
+.features-right {
+  margin-top: 38px;
+  
+}
+
+.goods-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.goods-item {
+  width: 260px;
+  height: 180px;
+}
+
+.cart {
+  height: 440px;
+  margin-top: 80px;
+  padding-top: 52px;
+}
+
+.our-contacts {
+  margin-left: 140px;
+  width: 220px;
+  height: 212px;
+  padding: 48px 49px;
+}
+
+.footer-social {
+  display: flex;
+}
+
+.social-list {
+  display: flex;
+  width: 260px;
+}
+
+.footer-container {
+  margin-left: 140px;
 }

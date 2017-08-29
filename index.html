@@ -5,7 +5,7 @@
     <title>HTML Academy: Нёрдс</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style-grid.css">
   </head>
   <body>
     <header class="main-header">
@@ -21,10 +21,17 @@
         </ul>
         <a class="basket" href="basket.html">Корзина</a>
       </nav>
-      <div class="thesis">
-        <p><b>Долго, дорого, скрупулезно</b></p>
-        <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-        <a class="btn btn-more-info" href="#moreinfo">Узнать больше</a>
+	  <div class="header-block">
+        <div class="thesis">
+          <p><b>Долго, дорого, скрупулезно</b></p>
+          <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
+          <a class="btn btn-more-info" href="#moreinfo">Узнать больше</a>
+        </div>
+        <ul class="slider">
+          <li class="slider-element slide-1"></li>
+          <li class="slider-element slide-2"></li>
+          <li class="slider-element slide-3"></li>
+		</ul>
       </div>
     </header>
     
@@ -60,8 +67,8 @@
       
       <section class="features">
         <h2 class="visible-hidden">Наши особенности</h2>
-        <div>
-          <p><b>Мы - маленькая, но гордая дизайн-студия из Краснодара</b></p>
+        <div class="features-left">
+          <p><b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b></p>
           <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая, как роботы.</p>
           <h3>выполняем заказы на разработку:</h3>
           <ul class="order-list">
@@ -70,17 +77,17 @@
             <li class="order-item">Слайдшой и видео для корпоративных презентаций</li>
           </ul>
         </div>
-        <div>
+        <div class="features-right">
           <img src="img/index-logo-color.png" width="360" height="208" alt="Цветной логотип «Нёрдс»"> 
           <h3>с 2004 года любим точность во всем:</h3>
           <ul class="features-list">
-            <li class="features-item"><span>146<sup>%</sup></span>Уровень самоотдачи</li>
-            <li class="features-item"><span>100<sup>%</sup></span>Соблюдение сроков</li>
-            <li class="features-item"><span>50<sup>%</sup></span>Минимальная предоплата</li>
+            <li class="features-item"><span>146<sup>%</sup></span> Уровень самоотдачи</li>
+            <li class="features-item"><span>100<sup>%</sup></span> Соблюдение сроков</li>
+            <li class="features-item"><span>50<sup>%</sup></span> Минимальная предоплата</li>
           </ul>
         </div>
       </section>
-      
+
       <nav class="goods">
         <h2 class="visible-hidden">Товары</h2>
         <ul class="goods-list">
@@ -89,9 +96,9 @@
           <li class="goods-item"><a href="#">pink</a></li>
           <li class="goods-item"><a href="#">mishka</a></li>
         </ul>
-      </nav>
-    </main>
-    
+      </nav>      
+    </main>     
+
     <footer class="main-footer">
       <div class="cart">
         <div class="our-contacts">
@@ -102,33 +109,17 @@
           <a class="btn feedback-button" href="feedback">напишите нам</a>
         </div>
       </div>
-      <div class="footer-social">
-        <ul>
+      <div class="footer-social container">
+        <ul class="social-list">
           <li><a class="social-button" href="#">Вконтакте</a></li>
           <li><a class="social-button" href="#">Фейсбук</a></li>
           <li><a class="social-button" href="#">Инстаграм</a></li>
         </ul>
-        <b>Давайте дружить, это выгодно!</b>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
+        <div class="footer-container">
+          <b>Давайте дружить, это выгодно!</b>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
       </div>
-    </footer>
-    
-    <form class="feedback-form" action="/keksby-mail" method="post">
-      <h2>Напишите нам</h2>
-      <div class="feedback-form-name">
-        <label for="fullname">Ваше имя:</label>
-        <input type="text" name="fullname" id="fullname" placeholder="Представьтесь, пожалуйста">
-      </div>
-      <div class="feedback-form-email">
-        <label for="email">Ваш e-mail:</label>
-        <input type="text" name="email" id="email" placeholder="Для отправки ответа">
-      </div>
-      <div class="feedback-form-message">
-        <label for="message">Текст письма:</label>
-        <textarea name="message" id="message" placeholder="В свободной форме"></textarea>
-      </div>
-      <button class="button" name="send" value="send">отправить</button>
-      <button class="button" name="close" value="close">Закрыть</button>
-    </form>
+    </footer>    
   </body>
 </html>
