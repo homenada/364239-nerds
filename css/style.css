@@ -5,10 +5,10 @@ body, html {
   font-size: 16px;
   line-height: 24px;
   color: black;
-  min-width: 1440px;
+  width: 1440px;
   font-weight: normal;
 /* для сетки  
-  background-image: url('nerds-catalog.jpg');
+  background-image: url('nerds-index.jpg');
   background-repeat:  no-repeat;
   background-size: 1440px;
   background-color: transparent;
@@ -37,7 +37,7 @@ a {
 .shop-header {
   margin: 0;
   padding: 0;
-  background-color: #eeeeee;
+//  background-color: #eeeeee;
 }
 
 .site-navigation,
@@ -77,10 +77,28 @@ a {
   line-height: 55px;
 }
 
+.thesis b {
+  display: block;
+  margin-bottom: -30px;
+
+}
+
+.thesis p {
+
+  margin: 0;
+  padding: 0;
+  margin-bottom: 55px;
+
+}
+
 .btn {
   color: #ffffff;
   line-height: 18px;
   background-color: #fb565a;
+}
+
+.btn-more-info {
+  padding: 15px 55px;
 }
 
 .btn:hover,
@@ -316,14 +334,15 @@ a {
   display: flex;
   flex-direction: column;
  // justify-content: space-around;
-  align-items: flex-start;
-  padding: 0 140px;
+//  align-items: flex-start;
+//  padding: 0 140px;
+  padding-top: 50px;
 }
 
 .shop-header {
   min-height: 305px;
   margin-bottom: 33px;
-  padding-top: 50px;
+
 }
 
 .shop-header h1 {
@@ -333,8 +352,7 @@ a {
 .main-navigation {
   display: flex;
   justify-content: space-between;
-  min-height: 80px;
-  align-self: stretch;  
+  min-height: 65px;
 }
 
 .main-header-logo {
@@ -345,15 +363,37 @@ a {
 .site-navigation {
   margin: 0;
   padding: 0;
+  padding-top: 25px;
   display: flex;
-  width: 760px;
-  justify-content: space-around;
-  min-height: 80px;
+  flex-wrap: wrap;
+  width: 440px;
+  justify-content: space-between;
+  min-height: 40px;
 }
 
 .basket {
-  width: 180px;
-  min-height: 80px;
+  position: relative;
+  width: 160px;
+  min-height: 40px;
+  margin: 0;
+  padding: 0;
+  padding-top: 25px;
+  text-align: right;
+  vertical-align: middle;
+}
+
+.basket::before {
+  position: absolute;
+  content: "";
+  width: 17px;
+  height: 17px;
+  top: 30px;
+  left: 45px;
+  background-image: url('../img/cart-icon.svg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+//  background-color: #ff0000;
 }
 
 .header-block {
@@ -363,6 +403,7 @@ a {
 .thesis {
   min-height: 80px;
   width: 380px;
+  padding-top: 78px;
 }
 
 .slider {
@@ -435,11 +476,11 @@ a {
 .cart {
   height: 440px;
   margin-top: 80px;
-  padding-top: 52px;
+//  padding-top: 52px;
 }
 
 .our-contacts {
-  margin-left: 140px;
+//  margin-left: 140px;
   width: 220px;
   height: 212px;
   padding: 48px 49px;
@@ -473,14 +514,14 @@ a {
   width: 760px;
 }
 
-.goods-list {
+.shop-goods-list {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
 }
 
-.goods-item {
+.shop-goods-item {
   width: 360px;
   height: 615px;
   margin-bottom: 75px;
