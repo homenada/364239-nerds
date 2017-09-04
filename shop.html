@@ -31,11 +31,19 @@
         <h2 class="visible-hidden">Фильтр</h2>
         <form class="filter-form">
           <h3>стоимость:</h3>        
-          <input type="range" min="1" max="10">
-          <label for="price-from">от</label>
-          <input class="input-price" type="number" value="0" id="price-from">
-          <label for="price-to">до</label>
-          <input class="input-price" type="number" value="15000" id="price-to">
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="toggle toggle-min"></div>
+            <div class="toggle toggle-max"></div>
+          </div>
+          <div class="price-filter">
+          <label class="price-label price-from">от
+          <input class="input-price" type="text" value="0" id="price-from"></label>
+          <label class="price-label price-to">до  
+          <input class="input-price" type="text" value="15000" id="price-to"></label>
+          </div>
           <h3>сетка:</h3>
           <ul class="grid-filter">
             <li class="grid-item"><input type="radio" name="grid" value="adaptive" id="grid-adaptive"><label for="grid-adaptive">Адаптивная</label></li>
@@ -50,7 +58,7 @@
             <li class="characteristics-item"><input type="checkbox" id="feature-gallery"><label for="feature-gallery">Галерея</label></li>
             <li class="characteristics-item"><input type="checkbox" id="feature-basket"><label for="feature-basket">Корзина</label></li>
           </ul>
-          <button value="apply-filter" class="button">Показать</button>
+          <button value="apply-filter" class="filter-button">Показать</button>
         </form>
       </section>
       
@@ -58,69 +66,103 @@
         <section class="shop-sorting">
           <h2 class="visible-hidden">Сортировка</h2>
           <h3>Сортировать:</h3>
-          <ul class="sort-type-filter">
-            <li class="sort-type-item"><a href=#>по цене</a></li>
-            <li class="sort-type-item"><a href=#>по типу</a></li>
-            <li class="sort-type-item"><a href=#>по названию</a></li>
-          </ul>
-          <ul class="sort-direction-filter">
-            <li class="sort-direction-item"><a href=#>по возрастанию</a></li>
-            <li class="sort-direction-item"><a href=#>по убыванию</a></li>
-          </ul>
+          <div class="sort-group">
+            <ul class="sort-type-filter">
+              <li class="sort-type-item"><a href=#>по цене</a></li>
+              <li class="sort-type-item"><a href=#>по типу</a></li>
+              <li class="sort-type-item"><a href=#>по названию</a></li>
+            </ul>
+            <ul class="sort-direction-filter">
+              <li class="sort-direction-item">
+                <a href=#>
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11" height="10" viewBox="0 0 11 10">
+                    <image id="icon-down-dir" width="11" height="10" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAKCAQAAADI+WwIAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhCQMRLywzSTLRAAAAVUlEQVQI113NQRnAIAyD0fwSsICFWUALFuoJLViYBSaBHfjKWNNL+i6BIlPMI0RnhjMhSsAbCSHaj4tzPrAhZ2Gb88mJscbW7ywqk0GKLDrV+8nX119wtCvml5QBwAAAAABJRU5ErkJggg=="/>
+                  </svg>
+                  <span class="visible-hidden">по убыванию</span>
+                </a>
+              </li>
+              <li class="sort-direction-item">
+                <a href=#>
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11" height="10" viewBox="0 0 11 10">
+                    <image id="icon-up-dir_копия" data-name="icon-up-dir копия" width="11" height="10" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAKCAMAAABVLlSxAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAASFBMVEUAAAAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAAAABXDQ+hAAAAFnRSTlMAAqJgXwnk43p5FfEUkyX7+q2sOzrFtApLfAAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhCQMROyeKNTwMAAAAQElEQVQI1z3GxwGAIBAEwEXFRDCy/ZfKEY55DSDMZKBmLlq7crP9O8mj9XRy5+sDi1Aar/o7yh82L/BR/UjjKQO4CgTbVv1GRQAAAABJRU5ErkJggg=="/>
+                  </svg>                
+                  <span class="visible-hidden">по возрастанию</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </section>
-        <section class="goods">
+        <section class="shop-goods">
           <h2 class="visible-hidden">Товары</h2>
           <ul class="shop-goods-list">
-            <li class="shop-goods-item"><a  href="#"><img src="img/img-sedona.jpg" width="359" height="615" alt="sedona"></a>
-              <div class="price-active">
-                <p><b>sedona</b></p>  
-                <p>Информационный сайт для туристов</p>
-                <button class="button price-button">9900 РУБ.</button>
-              </div>
+            <li class="shop-goods-item  selected">
+              <a  href="#">
+                <img src="img/img-sedona.jpg" width="359" height="615" alt="sedona">
+                <div class="price-active">
+                  <p><b>sedona</b></p>  
+                  <p>Информационный сайт для туристов</p>
+                  <button class="button price-button">9900 РУБ.</button>
+                </div>
+              </a>
             </li>
-            <li class="shop-goods-item"><a href="#"><img src="img/img-pink.jpg" width="359" height="615" alt="pink"></a>
-              <div class="price-active">
-                <p><b>pink app</b></p>  
-                <p>Продуктовый лендинг приложения для iOS и Android</p>
-                <button class="button price-button">9900 РУБ.</button>
-              </div>
+            <li class="shop-goods-item">
+              <a href="#">
+                <img src="img/img-pink.jpg" width="359" height="615" alt="pink">
+                <div class="price-active">
+                  <p><b>pink app</b></p>  
+                  <p>Продуктовый лендинг приложения для iOS и Android</p>
+                  <button class="button price-button">9900 РУБ.</button>
+                </div>
+              </a>
             </li>
-            <li class="shop-goods-item"><a href="#"><img src="img/img-barbershop.jpg" width="359" height="615" alt="borodinski"></a>
-              <div class="price-active">
-                <p><b>barbershop</b></p>  
-                <p>Сайт салоны красоты. Для мужчин, да.</p>
-                <button class="button price-button">9900 РУБ.</button>
-              </div>
+            <li class="shop-goods-item">
+              <a href="#">
+                <img src="img/img-barbershop.jpg" width="359" height="615" alt="borodinski">
+                <div class="price-active">
+                  <p><b>barbershop</b></p>  
+                  <p>Сайт салоны красоты. Для мужчин, да.</p>
+                  <button class="button price-button">9900 РУБ.</button>
+                </div>
+              </a>
             </li>
-            <li class="shop-goods-item"><a href="#"><img src="img/img-mishka.jpg" width="359" height="615" alt="mishka"></a>
-              <div class="price-active">
-                <p><b>mishka</b></p>  
-                <p>Интернет-магазин  вязаных игрушек</p>
-                <button class="button price-button">9900 РУБ.</button>
-              </div>
+            <li class="shop-goods-item">
+              <a href="#">
+                <img src="img/img-mishka.jpg" width="359" height="615" alt="mishka">
+                <div class="price-active">
+                  <p><b>mishka</b></p>  
+                  <p>Интернет-магазин  вязаных игрушек</p>
+                  <button class="button price-button">9900 РУБ.</button>
+                </div>
+              </a>
             </li>
-            <li class="shop-goods-item"><a href="#"><img src="img/img-aplus.jpg" width="359" height="615" alt="aplus"></a>
-              <div class="price-active">
-                <p><b>a plus</b></p>  
-                <p>Лендинг курсов повышения квалификации</p>
-                <button class="button price-button">9900 РУБ.</button>
-              </div>
+            <li class="shop-goods-item">
+              <a href="#">
+                <img src="img/img-aplus.jpg" width="359" height="615" alt="aplus">
+                <div class="price-active">
+                  <p><b>a plus</b></p>  
+                  <p>Лендинг курсов повышения квалификации</p>
+                  <button class="button price-button">9900 РУБ.</button>
+                </div>
+              </a>
             </li>
-            <li class="shop-goods-item"><a href="#"><img src="img/img-kvast.jpg" width="359" height="615" alt="kvast"></a>
-              <div class="price-active">
-                <p><b>кваст</b></p>  
-                <p>Промо-сайт производителя крафтового кваса</p>
-                <button class="button price-button">9900 РУБ.</button>
-              </div>
+            <li class="shop-goods-item">
+              <a href="#">
+                <img src="img/img-kvast.jpg" width="359" height="615" alt="kvast">
+                <div class="price-active">
+                  <p><b>кваст</b></p>  
+                  <p>Промо-сайт производителя крафтового кваса</p>
+                  <button class="button price-button">9900 РУБ.</button>
+                </div>
+              </a>
             </li>
           </ul>
         </section>
         <div class="pagger">
           <ul class="page-list">
-            <li class="page-item"><a href=# class="page-number-button">1</a></li>
-            <li class="page-item"><a href=# class="page-number-button">2</a></li>
-            <li class="page-item"><a href=# class="page-number-button">3</a></li>
-            <li class="page-item"><a href=# class="page-next-button">Следующая</a></li>
+            <li class="page-item"><a href=# class="page-button current">1</a></li>
+            <li class="page-item"><a href=# class="page-button">2</a></li>
+            <li class="page-item"><a href=# class="page-button">3</a></li>
+            <li class="page-item"><a href=# class="page-button page-next-button">Следующая</a></li>
           </ul>
         </div>
       </div>
@@ -137,9 +179,24 @@
       </div>
       <div class="footer-social">
         <ul class="social-list">
-          <li><a class="social-button" href="#">Вконтакте</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
+          <li><a class="social-button" href="#"><span class="visible-hidden">Вконтакте</span>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="15" viewBox="0 0 26 15">
+                  <image id="vk-icon" width="26" height="15" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAPCAQAAABQWBdtAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhCBAUHhM6dQt0AAABF0lEQVQoz42QIUuDYRSFn09YEUEGgggyMGgWhoJFJyqIYDAbRLAMTCaT2WITtKnBPsEfoBYxCKYFy5qKQaa4wcbmY9j2+e4Lc6edw33Ofe8bucw4ADWuoio4xRkzpIAGD6xFXwBGLDEEwCBvWLGjEwCHPfBP8wDgRpDV8Tg2FUdarb7HWa4N3QbQJWasx/awPfLUDZkLkKoTgKfBrkwCyoID3gdQvtUb7ioAWIz9NLgbIAUj2s85CptM+R27dbNWY1cyTUemg9ObPgYVL8Hv/jhHKLf8X890y8jrPrCdJDbqax9YPonNBid39OGFzd7bFv1MQPvgZlfScCGJTXrXNbIK4F7PDwFwxXOLli1bcqydbccX17z5Bb45CoW7amS6AAAAAElFTkSuQmCC"/>
+                </svg>
+              </a>
+          </li>
+          <li><a class="social-button" href="#"><span class="visible-hidden">Фейсбук</span>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="22" viewBox="0 0 12 22">
+                  <image id="fb-icon" width="12" height="22" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAWCAQAAABeMbWRAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhCBAUHhnaoOJqAAAAVElEQVQoz2NggIP/Bv93/v/1HwqQhb/9RwIIiZ3/UQAjXOIXAysDEoBK/Gdk+AcVUWD4iKyAAW6GAITPxIAD4JRgRHIYcTrIsQPqPIb3NPPH4JQAAMxOR+EfSfRoAAAAAElFTkSuQmCC"/>
+                </svg>
+              </a>
+          </li>
+          <li><a class="social-button" href="#"><span class="visible-hidden">Инстаграм</span>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="21" viewBox="0 0 21 21">
+                  <image id="insta-icon" width="21" height="21" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAQAAAADHm0dAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhCBAUHgspGZMiAAAAz0lEQVQoz6WTPW7CQBBG31oIRVTmBEnFEcwVfEl3FgdwAZdCGCqnykvhfwPWRplmVvM9zc/uLO4sbFy3xsIdFsZZEWz4IMa+g67IXzwAqAE2q5ke4Q7QZkuiiv8fvXBkz5ELULfDd8riSs6GLh48z6Ue/fSqajamN1P1ajpH095P0D6WdG5QagAOk67bcx1+5r2mVm96rXpmRPNhsMzUbBgqf0LB8sWSlGPlKbp9gku3L1EAcytv6s3KnNk8C7STFm/YIn/Y14RT5LaciP9bv6UMlLD8vPvAAAAAAElFTkSuQmCC"/>
+                </svg>
+              </a>
+          </li>
         </ul>
         <div class="footer-container">
           <b>Давайте дружить, это выгодно!</b>
