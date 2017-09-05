@@ -925,9 +925,9 @@ a {
   margin-bottom: 25px;
 }
 
-.shop-goods-item a {
-//  box-sizing: border-box;
-  display: block;
+.shop-goods-item {
+/*  box-sizing: border-box;
+  display: block;*/
   position: relative;
   width: 360px;
   height: 575px;
@@ -935,10 +935,11 @@ a {
   padding: 0;
   margin-bottom: 37px;
   padding-top: 38px;
+  color: #000;
 //  margin-right: 20px;
 }
 
-.shop-goods-item a::after {
+.shop-goods-item::after {
   position: absolute;
   content: "";
   width: 360px;
@@ -950,7 +951,7 @@ a {
   opacity: 0.12;
 }
 
-.shop-goods-item a:hover::after,
+.shop-goods-item:hover::after,
 .shop-goods-item a:focus::after {
   opacity: 1;
 }
@@ -974,8 +975,11 @@ a {
   display: none;
 }
 
-.shop-goods-item a:hover .price-active,
-.shop-goods-item a:focus .price-active {
+.price-active a {
+  color: #000;
+}
+
+.shop-goods-item:hover .price-active {
   display: block;
 }
 
