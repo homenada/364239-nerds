@@ -46,17 +46,17 @@
           </div>
           <h3>сетка:</h3>
           <ul class="grid-filter">
-            <li class="grid-item"><input type="radio" name="grid" value="adaptive" id="grid-adaptive"><label for="grid-adaptive">Адаптивная</label></li>
-            <li class="grid-item"><input type="radio" name="grid" value="fixed" id="grid-fixed"><label for="grid-fixed">Фиксированная</label></li>
-            <li class="grid-item"><input type="radio" name="grid" value="rubber" id="grid-rubber"><label for="grid-rubber">Резиновая</label></li>
+            <li class="grid-item"><input class="visible-hidden" type="radio" name="grid" value="adaptive" id="grid-adaptive"><label for="grid-adaptive">Адаптивная</label></li>
+            <li class="grid-item"><input class="visible-hidden" type="radio" name="grid" value="fixed" id="grid-fixed"><label for="grid-fixed">Фиксированная</label></li>
+            <li class="grid-item"><input class="visible-hidden" type="radio" name="grid" value="rubber" id="grid-rubber"><label for="grid-rubber">Резиновая</label></li>
           </ul>
           <h3>Особенности</h3>
           <ul class="characteristics-filter">
-            <li class="characteristics-item"><input type="checkbox" id="feature-slider"><label for="feature-slider">Слайдер</label></li>
-            <li class="characteristics-item"><input type="checkbox" id="feature-advantage"><label for="feature-advantage">Блок преимуществ</label></li>
-            <li class="characteristics-item"><input type="checkbox" id="feature-news"><label for="feature-news">Новости</label></li>
-            <li class="characteristics-item"><input type="checkbox" id="feature-gallery"><label for="feature-gallery">Галерея</label></li>
-            <li class="characteristics-item"><input type="checkbox" id="feature-basket"><label for="feature-basket">Корзина</label></li>
+            <li class="characteristics-item"><input class="visible-hidden" type="checkbox" id="feature-slider"><label for="feature-slider">Слайдер</label></li>
+            <li class="characteristics-item"><input class="visible-hidden" type="checkbox" id="feature-advantage"><label for="feature-advantage">Блок преимуществ</label></li>
+            <li class="characteristics-item"><input class="visible-hidden" type="checkbox" id="feature-news"><label for="feature-news">Новости</label></li>
+            <li class="characteristics-item"><input class="visible-hidden" type="checkbox" id="feature-gallery"><label for="feature-gallery">Галерея</label></li>
+            <li class="characteristics-item"><input class="visible-hidden" type="checkbox" id="feature-basket"><label for="feature-basket">Корзина</label></li>
           </ul>
           <button value="apply-filter" class="filter-button">Показать</button>
         </form>
@@ -204,5 +204,28 @@
         </div>
       </div>
     </footer>
+    
+    <section class="modal modal-feedback">
+      <h2>Напишите нам</h2>
+      <form class="feedback-form">
+        <div class="feedback-input">
+          <p>
+            <label for="user-name">Ваше имя:</label>
+            <input class="user-name" id="user-name" type="text" name="username" placeholder="Представьтесь, пожалуйста">
+          </p>
+          <p>
+            <label for="e-mail">Ваш e-mail:</label>
+            <input class="e-mail" id="e-mail" type="email" name="e-mail" placeholder="Для отправки ответа">
+          </p>
+        </div>
+        <p>
+          <label for="feedback-area">Текст письма:</label>
+          <textarea rows="6" name="text" placeholder="В свободной форме" id="feedback-area"></textarea>
+        </p>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
+
   </body>
 </html>
