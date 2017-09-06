@@ -17,7 +17,8 @@ body, html {
 
 }
 
-.visible-hidden {
+.visible-hidden,
+.shop-goods-item > a{
   position: absolute;
   overflow: hidden;
   clip: rect(0 0 0 0);
@@ -925,7 +926,7 @@ a {
   margin-bottom: 25px;
 }
 
-.shop-goods-item {
+.shop-goods-item{
 /*  box-sizing: border-box;
   display: block;*/
   position: relative;
@@ -939,7 +940,7 @@ a {
 //  margin-right: 20px;
 }
 
-.shop-goods-item::after {
+.item-header {
   position: absolute;
   content: "";
   width: 360px;
@@ -951,8 +952,8 @@ a {
   opacity: 0.12;
 }
 
-.shop-goods-item:hover::after,
-.shop-goods-item a:focus::after {
+.shop-goods-item:hover .item-header,
+.hidden-ref:focus~.item-header{
   opacity: 1;
 }
 
@@ -979,7 +980,8 @@ a {
   color: #000;
 }
 
-.shop-goods-item:hover .price-active {
+.shop-goods-item:hover .price-active,
+.hidden-ref:focus~.price-active {
   display: block;
 }
 
