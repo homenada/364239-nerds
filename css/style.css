@@ -6,7 +6,7 @@ body, html {
   line-height: 24px;
   color: black;
   font-weight: normal;
-
+  min-width: 1440px;
 /* для сетки  
   width: 1440px;
   background-image: url('nerds-catalog.jpg');
@@ -876,15 +876,72 @@ a {
   line-height: 42px;
 }
 
-.grid-item input,
-.characteristics-item input {
-//  width: 0;
-//  height: 0;
+.grid-item input:hover + label,
+.characteristics-item input:focus + label {
+  color: #000;
 }
 
-.grid-item label {
+.grid-item input:checked + label::before,
+.characteristics-item input:checked + label:after,
+.characteristics-item input:checked + label:before {
+  display: block;
+}
+
+.grid-item input:disabled + label,
+.grid-item input:disabled + label::after,
+.grid-item input:disabled + label::before,
+.characteristics-item input:disabled + label + span,
+.characteristics-item input:disabled + label:after,
+.characteristics-item input:disabled + label:before {
+  opacity: 0.3;
+}
+
+.grid-item input:hover + label::before,
+.grid-item input:focus + label::before,
+.characteristics-item input:hover + label:after,
+.characteristics-item input:hover + label:before,
+.characteristics-item input:focus + label:after,
+.characteristics-item input:focus + label:before {
+    background-color: #4d4d4d;
+}
+
+.grid-item input:hover + label::after,
+.grid-item input:focus + label::after,
+.characteristics-item input:hover + label + span,
+.characteristics-item input:focus + label + span {
+  border-color: #4d4d4d;
+}
+
+.grid-item label,
+.characteristics-item label {
   position: relative;
   padding-left: 35px;
+  color: #283136;
+}
+
+.grid-item label::after {
+  position: absolute;
+  content: "";
+  width: 17px;
+  height: 17px;
+  left: 0;
+  bottom: -2px;
+  border: 4px solid #b8b8b8;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+.grid-item label::before {
+  display: none;
+  position: absolute;
+  content: "";
+  width: 9px;
+  height: 9px;
+  left: 0;
+  bottom: -2px;
+  border: 8px solid #fff;
+  background-color: #b8b8b8;
+  border-radius: 50%;
 }
 
 .characteristics-filter {
@@ -893,11 +950,44 @@ a {
 }
 
 .characteristics-item {
+  position: relative;
   line-height: 40px;
 }
 
-.characteristics-item label {
-  padding-left: 35px;
+.characteristics-item span {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 19px;
+  height: 19px;
+  border: 2px solid #b8b8b8;
+}
+
+.characteristics-item label::before {
+  position: absolute;
+  content: "";
+  top: 4px;
+  left: 8px;
+  width: 19px;
+  height: 4px;
+  background-color: #b8b8b8;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  transform: rotate(-45deg);
+  display: none;
+}
+
+.characteristics-item label::after {
+  position: absolute;
+  content: "";
+  top: 8px;
+  left: 5px;
+  width: 9px;
+  height: 4px;
+  transform: rotate(45deg);
+  background-color: #b8b8b8;
+  display: none;
 }
 
 .filter-button {
@@ -970,6 +1060,7 @@ a {
   height: 230px;
   text-align: center;
   padding: 12px 80px;
+  padding-top: 25px;
 }
 
 .price-active {
