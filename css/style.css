@@ -193,8 +193,10 @@ a {
 
 .our-contacts,
 .price-active p {
+  display: block;
   font-size: 16px;
   line-height: 18px;
+  max-height: 45px;
 }
 
 .our-contacts b,
@@ -750,7 +752,6 @@ a {
   height: 80px;
   background-color: #e1e1e1;
   border-radius: 50%;
-
 }
 
 .social-button:hover,
@@ -760,6 +761,10 @@ a {
 
 .social-button:active {
   background-color: #d7373b;
+}
+
+.social-button:active path {
+  fill: #e37376;
 }
 
 .footer-container {
@@ -786,6 +791,7 @@ a {
 
 .filter-form {
   width: 260px;
+  padding-top: 2px;
 }
 
 .range-controls {
@@ -793,7 +799,7 @@ a {
   height: 41px;
   border-radius: 5px;
   background: #eeeeee;
-  margin-top: 52px;
+  margin-top: 50px;
   margin-bottom: 15px;
   border-radius: 5px;
   padding-top: 39px;
@@ -869,7 +875,8 @@ a {
 }
 
 .grid-filter {
-  margin-bottom: 35px;
+  margin-top: 3px;
+  margin-bottom: 30px;
 }
 
 .grid-item {
@@ -881,34 +888,24 @@ a {
   color: #000;
 }
 
-.grid-item input:checked + label::before,
-.characteristics-item input:checked + label:after,
-.characteristics-item input:checked + label:before {
+.grid-item input:checked + label::before {
   display: block;
 }
 
 .grid-item input:disabled + label,
 .grid-item input:disabled + label::after,
-.grid-item input:disabled + label::before,
-.characteristics-item input:disabled + label + span,
-.characteristics-item input:disabled + label:after,
-.characteristics-item input:disabled + label:before {
+.grid-item input:disabled + label::before {
+  opacity: 0.3;
   opacity: 0.3;
 }
 
 .grid-item input:hover + label::before,
-.grid-item input:focus + label::before,
-.characteristics-item input:hover + label:after,
-.characteristics-item input:hover + label:before,
-.characteristics-item input:focus + label:after,
-.characteristics-item input:focus + label:before {
+.grid-item input:focus + label::before {
     background-color: #4d4d4d;
 }
 
 .grid-item input:hover + label::after,
-.grid-item input:focus + label::after,
-.characteristics-item input:hover + label + span,
-.characteristics-item input:focus + label + span {
+.grid-item input:focus + label::after{
   border-color: #4d4d4d;
 }
 
@@ -945,49 +942,40 @@ a {
 }
 
 .characteristics-filter {
-  margin-top: 7px;
-  margin-bottom: 38px;
+  margin-top: 6px;
+  margin-bottom: 47px;
 }
 
 .characteristics-item {
   position: relative;
-  line-height: 40px;
-}
-
-.characteristics-item span {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 19px;
-  height: 19px;
-  border: 2px solid #b8b8b8;
+  display: block;
+  margin-top: 14px;
+  margin-bottom: 21px;
+  line-height: 18px;
 }
 
 .characteristics-item label::before {
   position: absolute;
   content: "";
-  top: 4px;
-  left: 8px;
-  width: 19px;
-  height: 4px;
-  background-color: #b8b8b8;
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  transform: rotate(-45deg);
-  display: none;
+  top: 0px;
+  left: 0px;
+  width: 27px;
+  height: 25px;
+  background-image: url("../img/checkbox-off.svg");
+  opacity: 0.5;
 }
 
-.characteristics-item label::after {
-  position: absolute;
-  content: "";
-  top: 8px;
-  left: 5px;
-  width: 9px;
-  height: 4px;
-  transform: rotate(45deg);
-  background-color: #b8b8b8;
-  display: none;
+.characteristics-item input:checked + label:before {
+  background-image: url("../img/checkbox-on.svg");
+}
+
+.characteristics-item input:disabled + label:before {
+  opacity: 0.12;
+}
+
+.characteristics-item input:hover + label:before,
+.characteristics-item input:focus + label:before {
+  opacity: 1;
 }
 
 .filter-button {
@@ -1027,7 +1015,6 @@ a {
   margin-bottom: 37px;
   padding-top: 38px;
   color: #000;
-//  margin-right: 20px;
 }
 
 .item-header {
@@ -1060,10 +1047,8 @@ a {
   height: 230px;
   text-align: center;
   padding: 12px 80px;
-  padding-top: 25px;
-}
-
-.price-active {
+  padding-top: 28px;
+  overflow: hidden;
   display: none;
 }
 
