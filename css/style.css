@@ -472,7 +472,7 @@ a {
   height:425px;
 }
 
-.slides-element:nth-child(2) {
+.slides-element:nth-child(1) {
   display: block;
 }
 
