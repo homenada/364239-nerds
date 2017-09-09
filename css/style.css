@@ -192,7 +192,7 @@ a {
 }
 
 .price-active p {
-  max-height: 410px;
+  max-height: 400px;
   overflow-y: auto;
 }
 
