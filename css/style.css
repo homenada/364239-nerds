@@ -110,11 +110,12 @@ a {
 .btn:hover,
 .btn:focus {
   background-color: #e74246;
+
 }
 
 .btn:active {
   background-color: #d7373b;
-  color: rbga(255,255,255,0.3);
+  color: rgba(255,255,255,0.3);
 }
 
 .order-apps {
@@ -399,6 +400,23 @@ a {
   min-height: 40px;
 }
 
+.current-page {
+  position: relative;
+}
+.current-page::after {
+  position: absolute;
+  content: "";
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  background-color: #fb565a;
+  height: 2px;
+}
+
+.site-navigation a {
+  word-wrap: break-word;
+}
+
 .basket {
   position: relative;
   width: 160px;
@@ -543,14 +561,17 @@ a {
 }
 
 .web-sites::before {
+  background-color: #fb565a;
   background-image: url("../img/web-sites.png");
 }
 
 .apps::before {
+  background-color: #00ca74;
   background-image: url("../img/apps.png");
 }
 
 .presentations::before {
+  background-color: #efc84a;
   background-image: url("../img/presentations.png");
 }
 
@@ -680,6 +701,7 @@ a {
 .cart {
   margin: 0px;
   overflow: visible;
+  background-color: #e9e5dc;
   background-image: url("../img/map-img.png");
   background-position: 50% 50%;
   padding: 53px 0;
@@ -982,6 +1004,17 @@ a {
   text-align: center;
 }
 
+.filter-button:hover,
+.filter-button:focus {
+  background: #dfdfdf;
+}
+
+.filter-button:active {
+  background: #d5d5d5;
+  color: #a8a8a8;
+  box-shadow: inset 0px 4px #bfbfbf;
+}
+
 .right-column {
   display: flex;
   flex-direction: column;
@@ -1093,6 +1126,7 @@ a {
 
 .page-button {
   display: inline-block;
+  vertical-align: middle;
   box-sizing: border-box;
   width: 50px;
   height: 50px;
@@ -1176,7 +1210,7 @@ a {
 
 .modal-close {
   position: absolute;
-  top: 0;
+  top: 80px;
   right: 90px;
   width: 22px;
   height: 22px;
@@ -1184,14 +1218,15 @@ a {
   background-color: transparent;
   border: 0;
   cursor: pointer;
+  outline: none;
 }
 
 .modal-close::before,
 .modal-close::after {
   content: "";
   position: absolute;
-  top: 80px;
-  left: 2px;
+  top: 0;
+  left: 0px;
   width: 30px;
   height: 3px;
   background-color: #fecccd;
@@ -1203,6 +1238,16 @@ a {
 
 .modal-close::after {
   transform: rotate(-45deg);
+}
+
+.modal-close:hover::before,
+.modal-close:hover::after {
+  background-color: #fb565a;
+}
+
+.modal-close:active::before,
+.modal-close:active::after {
+  background-color: #ffeeee;
 }
 
 .modal-show {
