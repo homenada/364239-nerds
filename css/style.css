@@ -1164,6 +1164,16 @@ a {
   padding: 0;
 }
 
+@keyframes magic {
+  0% {
+    transform: scale(0.005);
+  }
+  
+  100% {
+    transform: scale(1);
+  }
+}
+
 .feedback-form button {
   padding: 15px 85px;
   margin-top: 40px;
@@ -1252,4 +1262,5 @@ a {
 
 .modal-show {
   display: block;
+  animation: magic 0.6s;
 }
