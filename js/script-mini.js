@@ -1,0 +1,1 @@
+var link=document.querySelector(".feedback-button"),popup=document.querySelector(".modal-feedback"),close=popup.querySelector(".modal-close");link.addEventListener("click",function(e){e.preventDefault(),popup.classList.add("modal-show")}),close.addEventListener("click",function(e){e.preventDefault(),popup.classList.remove("modal-show")});
