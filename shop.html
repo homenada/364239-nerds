@@ -41,9 +41,9 @@
           </div>
           <div class="price-filter">
           <label class="price-label price-from">от
-          <input class="input-price" type="text" value="0" id="price-from"></label>
-          <label class="price-label price-to">до  
-          <input class="input-price" type="text" value="15000" id="price-to"></label>
+          <input class="input-price" type="text" name="price-min" value="0" id="price-from"></label>
+          <label class="price-label price-to">до
+          <input class="input-price" type="text" name="price-max" value="15000" id="price-to"></label>
           </div>
           <h3>сетка:</h3>
           <ul class="grid-filter">
@@ -53,11 +53,26 @@
           </ul>
           <h3>Особенности</h3>
           <ul class="characteristics-filter">
-            <li class="characteristics-item"><input class="visible-hidden" type="checkbox" id="feature-slider"><label for="feature-slider"><span></span>Слайдер</label></li>
-            <li class="characteristics-item"><input class="visible-hidden" type="checkbox" id="feature-advantage"><label for="feature-advantage"><span></span>Блок преимуществ</label></li>
-            <li class="characteristics-item"><input class="visible-hidden" type="checkbox" id="feature-news"><label for="feature-news"><span></span>Новости</label></li>
-            <li class="characteristics-item"><input class="visible-hidden" type="checkbox" id="feature-gallery"><label for="feature-gallery"><span></span>Галерея</label></li>
-            <li class="characteristics-item"><input class="visible-hidden" type="checkbox" id="feature-basket"><label for="feature-basket"><span></span>Корзина</label></li>
+            <li class="characteristics-item">
+              <input class="visible-hidden" type="checkbox" id="feature-slider" name="characteristics" value="slider">
+              <label for="feature-slider"><span></span>Слайдер</label>
+            </li>
+            <li class="characteristics-item">
+              <input class="visible-hidden" type="checkbox" id="feature-advantage" name="characteristics" value="advantage">
+              <label for="feature-advantage"><span></span>Блок преимуществ</label>
+            </li>
+            <li class="characteristics-item">
+              <input class="visible-hidden" type="checkbox" id="feature-news" name="characteristics" value="news">
+              <label for="feature-news"><span></span>Новости</label>
+            </li>
+            <li class="characteristics-item">
+              <input class="visible-hidden" type="checkbox" id="feature-gallery" name="characteristics" value="gallery">
+              <label for="feature-gallery"><span></span>Галерея</label>
+            </li>
+            <li class="characteristics-item">
+              <input class="visible-hidden" type="checkbox" id="feature-basket" name="characteristics" value="basket">
+              <label for="feature-basket"><span></span>Корзина</label>
+            </li>
           </ul>
           <button value="apply-filter" class="filter-button">Показать</button>
         </form>
@@ -86,7 +101,7 @@
                 <a href=#>
                   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11" height="10" viewBox="0 0 11 10">
                     <image id="icon-up-dir_копия" data-name="icon-up-dir копия" width="11" height="10" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAKCAMAAABVLlSxAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAASFBMVEUAAAAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAAAABXDQ+hAAAAFnRSTlMAAqJgXwnk43p5FfEUkyX7+q2sOzrFtApLfAAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhCQMROyeKNTwMAAAAQElEQVQI1z3GxwGAIBAEwEXFRDCy/ZfKEY55DSDMZKBmLlq7crP9O8mj9XRy5+sDi1Aar/o7yh82L/BR/UjjKQO4CgTbVv1GRQAAAABJRU5ErkJggg=="/>
-                  </svg>                
+                  </svg>
                   <span class="visible-hidden">по возрастанию</span>
                 </a>
               </li>
@@ -208,7 +223,7 @@
     
     <section class="modal modal-feedback">
       <h2>Напишите нам</h2>
-      <form class="feedback-form action="https://echo.htmlacademy.ru" method="get"">
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="get">
         <div class="feedback-input">
           <p>
             <label for="user-name">Ваше имя:</label>
