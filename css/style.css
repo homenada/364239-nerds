@@ -1189,10 +1189,6 @@ a {
   }
 }
 
-.modal-error {
-  animation: shake 0.6s;
-}
-
 .feedback-form button {
   padding: 15px 85px;
   margin-top: 40px;
@@ -1282,4 +1278,8 @@ a {
 .modal-show {
   display: block;
   animation: magic 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }

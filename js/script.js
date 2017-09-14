@@ -20,13 +20,10 @@ close.addEventListener("click", function (evt) {
 });
   
 form.addEventListener("submit", function (evt) {
-  console.log("OK");
-  console.log("usr: "+username.value);
-  console.log("email: "+email.value);
-  console.log("logic: "+(!username.value || !email.value));
   if (!username.value || !email.value) {
     evt.preventDefault();
-	console.log("Нужно ввести логин и пароль");
+    popup.classList.remove("modal-error");
+    popup.offsetWidth = popup.offsetWidth;
     popup.classList.add("modal-error");
   } else {
     popup.classList.remove("modal-error");
