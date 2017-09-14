@@ -6,7 +6,7 @@
     <title>HTML Academy: Нёрдс - Магазин</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style-mini.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <header class="shop-header">
@@ -183,16 +183,19 @@
         </div>
       </div>
     </main>
-    <footer class="main-footer container">
-      <div class="cart">
-        <div class="our-contacts">
-          <b>NЁRDS DESIGN STUDIO</b>
-          <p>191186, Санкт-Петербург,<br>
-            ул. Б. Конюшенная, д. 19/8</p>
-          <p>тел. +7 (812) 275-75-75</p>
-          <a class="btn feedback-button" href="feedback">напишите нам</a>
-        </div>
+    
+    <div class="cart">
+      <iframe src="https://yandex.ru/map-widget/v1/-/CBUv6XT0cA" width="1440" height="416" frameborder="0"></iframe>
+      <div class="our-contacts">
+        <b>NЁRDS DESIGN STUDIO</b>
+        <p>191186, Санкт-Петербург,<br>
+          ул. Б. Конюшенная, д. 19/8</p>
+        <p>тел. +7 (812) 275-75-75</p>
+        <a class="btn feedback-button" href="feedback">напишите нам</a>
       </div>
+    </div>
+    
+    <footer class="main-footer container">
       <div class="footer-social">
         <ul class="social-list">
           <li><a class="social-button" href="#"><span class="visible-hidden">Вконтакте</span>
@@ -231,7 +234,7 @@
           </p>
           <p>
             <label for="e-mail">Ваш e-mail:</label>
-            <input class="e-mail" id="e-mail" type="email" name="e-mail" placeholder="Для отправки ответа">
+            <input class="e-mail" id="e-mail" type="email" name="email" placeholder="Для отправки ответа">
           </p>
         </div>
         <p>
@@ -242,6 +245,6 @@
       </form>
       <button class="modal-close" type="button">Закрыть</button>
     </section>
-    <script src="js/script-mini.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

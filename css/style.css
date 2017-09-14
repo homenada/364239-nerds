@@ -697,32 +697,27 @@ a {
 }
 
 .cart {
-  margin: 0px;
+  position: relative;
+  margin: 0px auto;
   overflow: visible;
   background-color: #e9e5dc;
-  background-image: url("../img/map-img.png");
-  background-position: 50% 50%;
-  padding: 53px 0;
+  background: url("../img/map-marker.png") 67% 50% no-repeat,
+              url("../img/map-img.png") 50% 50% no-repeat;
   margin-bottom: 70px;
+  box-sizing: border-box;
+  width: 1440px;
+  height: 416px;
 }
 
 .our-contacts {
-  position: relative;
+  position: absolute;
+  top: 53px;
+  left: 50%;
+  margin-left: -630px;
   width: 220px;
   min-height: 212px;
   padding: 50px;
   background-color: #ffffff;
-}
-
-.our-contacts::before {
-  position: absolute;
-  content: "";
-  width: 190px;
-  height: 210px;
-  background-image: url("../img/map-marker.png");
-  background-repeat: no-repeat;
-  top: 40px;
-  left: 680px;
 }
 
 .our-contacts p {
@@ -1146,6 +1141,7 @@ a {
 
 .main-footer {
   margin-bottom: 75px;
+  overflow: visible;
 }
 
 .modal h2 {
@@ -1169,6 +1165,32 @@ a {
   100% {
     transform: scale(1);
   }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 .feedback-form button {
